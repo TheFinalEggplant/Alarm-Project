@@ -8,6 +8,7 @@ using namespace std;
 
 int main()
 {
+
 	string Nombre;
 	cout << "Hello. I am your personalized Alarm Clock. To begin, please enter your name.\nMy name is: "; //Intro and Name
 	cin >> Nombre;
