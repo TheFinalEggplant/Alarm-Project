@@ -11,12 +11,13 @@ int main()
 	string Nombre;
 	cout << "Hello. I am your personalized Alarm Clock. To begin, please enter your name.\nMy name is: "; //Intro and Name
 	cin >> Nombre;
-	cout << "Hi "<<Nombre<<"\n Let's begin, shall we?\n";
+	cout << "Hi "<<Nombre<<"\nLet's begin, shall we?\n";
 	system("PAUSE");
-    return 1;
-}
-int clock()
-{
-	cout << "First, we need to check your computer's clock. One moment please...\n";
-	return 0;
+
+	using std::chrono::system_clock;
+	system_clock::time_point current = system_clock::now();
+	time_t Tiempo;
+	Tiempo = sytem_clock::to_time_t(current);
+	cout << "Your current time is: " << current;
+    return 0;
 }
