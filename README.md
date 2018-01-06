@@ -18,7 +18,7 @@ int main()
 	using std::chrono::system_clock;
 	system_clock::time_point current = system_clock::now();
 	time_t Tiempo;
-	Tiempo = sytem_clock::to_time_t(current);
-	cout << "Your current time is: " << current;
+	Tiempo = system_clock::to_time_t(current);
+	cout << "Your current time is: " << ctime
     return 0;
-}
+ }
